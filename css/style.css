@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.header__logo a {
+    color: darkturquoise;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu__descktop ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.menu__descktop a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* sobre */
+main>.container {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 2%;
+    display: flex;
+    height: 600px;
+}
+
+.container>.img__perfil, .sobre {
+    width: 50%;
+    padding: 20px;
+}
+
+.img__perfil img {
+    width: 400px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.chamada__links {
+    display: none;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.chamada__links ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.chamada__links a {
+    background-color: #2d2d2d;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chamada__links a:hover {
+    background-color: darkturquoise;
+    color: #000;
+}
+
+.container>.sobre h1, h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: darkturquoise;
+}
+
+.container>.sobre h2 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.container>.sobre p {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.btn__sobre {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn__sobre a {
+    padding: 10px 40px;
+    background-color: chartreuse;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:994px) {
+    .container>.sobre h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:866px) {
+    main>.container {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .container>.img__perfil, .sobre {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img__perfil {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .chamada__links {
+        display: block;
+    }
+
+    .menu__descktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:434px) {
+    .img__perfil img {
+        width: 300px;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .img__perfil img {
+        width: 200px;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+}
+
+@media screen and (max-width:284px) {
+    .btn__sobre a {
+        padding: 10px;
+
+    }
+}
