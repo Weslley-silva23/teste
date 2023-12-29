@@ -207,7 +207,7 @@ main>.container {
 
 .card__projeto {
     width: 33.3%;
-    border: 10px solid gray;
+    border: 10px solid #000;
     margin-top: 30px;
 }
 
